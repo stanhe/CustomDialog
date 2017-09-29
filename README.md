@@ -1,3 +1,4 @@
+[![](https://www.jitpack.io/v/stanhe/CustomDialog.svg)](https://www.jitpack.io/#stanhe/CustomDialog)
 # CustomDialog
 继承DialogFragment，方便使用的自定义dialog
 ## Feature
