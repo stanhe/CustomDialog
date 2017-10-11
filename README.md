@@ -1,6 +1,6 @@
 [![jitpack](https://www.jitpack.io/v/stanhe/CustomDialog.svg)](https://www.jitpack.io/#stanhe/CustomDialog)
 [![license](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)](https://github.com/stanhe/CustomDialog/blob/master/LICENSE)
-
+[![API](https://img.shields.io/badge/API-11%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=11)
 # CustomDialog
 继承DialogFragment，方便使用的自定义dialog
 ## Feature
