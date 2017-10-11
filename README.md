@@ -1,5 +1,5 @@
-[![](https://www.jitpack.io/v/stanhe/CustomDialog.svg)](https://www.jitpack.io/#stanhe/CustomDialog)
-![](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)
+[![jitpack](https://www.jitpack.io/v/stanhe/CustomDialog.svg)](https://www.jitpack.io/#stanhe/CustomDialog)
+[![license](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)](https://github.com/stanhe/CustomDialog/blob/master/LICENSE)
 
 # CustomDialog
 继承DialogFragment，方便使用的自定义dialog
