@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void showCustomDialog(View view) {
         new CustomDialog()
-                .setSize(0.7f,200)
+                .setSize(0.7f,400)
                 .noTitle(true) // default false
                 .setStyleAnimation(R.style.DialogAnimation) // in/out animation
                 .setConfirmListener(new View.OnClickListener() {

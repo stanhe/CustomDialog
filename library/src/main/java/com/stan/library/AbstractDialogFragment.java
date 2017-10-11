@@ -14,7 +14,7 @@ import android.view.Window;
  */
 
 public abstract class AbstractDialogFragment extends DialogFragment{
-
+    public static final String TAG = "AbstractDialogFragment";
     /**
      * width/height 宽、高 单位dp
      */
@@ -44,12 +44,34 @@ public abstract class AbstractDialogFragment extends DialogFragment{
      * cancel、confirm 点击事件监听
      */
     protected View.OnClickListener cancelListener,confirmListener;
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("width",width);
+        outState.putInt("height",height);
+        outState.putFloat("fWidth",fWidth);
+        outState.putFloat("fHeight",fHeight);
+        outState.putInt("animationId",animationId);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        getSaveState(savedInstanceState);
         initWindow();
         rootView = inflater.inflate(setLayoutId(),container);
         initView(rootView);
         return rootView;
+    }
+
+    private void getSaveState(Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            this.width = savedInstanceState.getInt("width");
+            this.height = savedInstanceState.getInt("height");
+            this.fWidth = savedInstanceState.getFloat("fWidth");
+            this.fHeight = savedInstanceState.getFloat("fHeight");
+            this.animationId = savedInstanceState.getInt("animationId");
+        }
     }
 
     /**
