@@ -10,7 +10,7 @@
     拓展动画实现方式，可以 [自定义动画实现](https://github.com/stanhe/CustomDialog/blob/0c92046ca24b6b62c7b2bbd06030388e83d67559/app/src/main/java/com/stan/customdialogfragment/CustomDialog.java#L31)。接口方式只提供基本的cancel、confirm，应优先考虑在子类中拓展自定义接口和其他实现
 
 ## Usage
-   Step 1. Add the [JitPack dependence](https://www.jitpack.io/#stanhe/CustomDialog/1.0.0)
+   Step 1. Add the [JitPack dependence](https://www.jitpack.io/#stanhe/CustomDialog/1.0.1)
 
    Step 2. create a [CustomDialog](https://github.com/stanhe/CustomDialog/blob/master/app/src/main/java/com/stan/customdialogfragment/CustomDialog.java)
    
