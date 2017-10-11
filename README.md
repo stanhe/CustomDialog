@@ -1,5 +1,4 @@
 [![](https://www.jitpack.io/v/stanhe/CustomDialog.svg)](https://www.jitpack.io/#stanhe/CustomDialog)
-
 ![](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)
 
 # CustomDialog
