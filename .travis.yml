@@ -7,7 +7,7 @@ android:
   - extra-android-m2repository
   - extra-android-support
   licenses:
-    - 'android-sdk-license-.+'
+    - '.+'
 
 script:
   - "./gradlew assembleRelease"
