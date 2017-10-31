@@ -14,7 +14,23 @@
 
 ## Usage
    Step 1. Add the [JitPack dependence](https://www.jitpack.io/#stanhe/CustomDialog/1.0.1)
-
+   
+   ```
+   //Add it in your root build.gradle at the end of repositories
+   allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+   ```
+   ```
+   //Add the dependency
+   dependencies {
+		compile 'com.github.stanhe:CustomDialog:1.0.1'  
+	}
+   ```
+    
    Step 2. create a [CustomDialog](https://github.com/stanhe/CustomDialog/blob/master/app/src/main/java/com/stan/customdialogfragment/CustomDialog.java)
    
    Step 3. [use dialog](https://github.com/stanhe/CustomDialog/blob/master/app/src/main/java/com/stan/customdialogfragment/MainActivity.java)
