@@ -101,8 +101,8 @@ public abstract class AbstractDialogFragment extends DialogFragment{
      */
     private void resizeDialog() {
         if (getDialog() != null) {
-            int relW = (fWidth>0 && fWidth <1)?(int)(getScreenWidthAndHeight()[0]* fWidth) : (int)(width * density());
-            int relH = (fHeight>0 && fHeight <1)?(int)(getScreenWidthAndHeight()[1]* fHeight) : (int)(height * density());
+            int relW = (fWidth>0 && fWidth <1)?(int)(getScreenWidthAndHeight()[0]* fWidth) :(width == -1 || width==-2)?width: (int)(width * density());
+            int relH = (fHeight>0 && fHeight <1)?(int)(getScreenWidthAndHeight()[1]* fHeight) :(height==-1 || height==-2)?height: (int)(height * density());
             getDialog().getWindow().setLayout(relW,relH);
         }
     }
