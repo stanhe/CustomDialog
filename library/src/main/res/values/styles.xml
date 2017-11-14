@@ -1,7 +1,0 @@
-<resources>
-
-    <style name="DialogAnimation">
-        <item name="android:windowEnterAnimation">@anim/in_from_bottom</item>
-        <item name="android:windowExitAnimation">@anim/out_to_bottom</item>
-    </style>
-</resources>
