@@ -15,6 +15,7 @@ public class CustomDialog extends AbstractDialogFragment implements View.OnClick
 
     @Override
     public int setLayoutId() {
+        attachToRoot = true; // default is false;
         return R.layout.dialog_custom;
     }
 
