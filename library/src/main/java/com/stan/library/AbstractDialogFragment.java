@@ -45,6 +45,8 @@ public abstract class AbstractDialogFragment extends DialogFragment{
      */
     protected View.OnClickListener cancelListener,confirmListener;
 
+    protected boolean attachToRoot = false;
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -59,7 +61,7 @@ public abstract class AbstractDialogFragment extends DialogFragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         getSaveState(savedInstanceState);
         initWindow();
-        rootView = inflater.inflate(setLayoutId(),container);
+        rootView = inflater.inflate(setLayoutId(),container,attachToRoot);
         initView(rootView);
         return rootView;
     }
