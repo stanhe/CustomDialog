@@ -47,6 +47,10 @@ public abstract class AbstractDialogFragment extends DialogFragment{
 
     protected boolean attachToRoot = false;
 
+    public AbstractDialogFragment() {
+        initDataBeforeViewCreated();
+    }
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -126,10 +130,16 @@ public abstract class AbstractDialogFragment extends DialogFragment{
         return getDialog().getContext().getResources().getDisplayMetrics().density;
     }
 
+
     /**
      * @return  必须返回 根view id.
      */
     protected abstract int setLayoutId();
+
+    /**
+     * 初始化数据，如adapter等位置
+     */
+    protected abstract void initDataBeforeViewCreated();
 
     /**
      * @param v 对View进行处理，比如设置事件，初始化等
