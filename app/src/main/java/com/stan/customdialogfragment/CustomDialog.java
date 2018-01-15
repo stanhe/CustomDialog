@@ -20,6 +20,11 @@ public class CustomDialog extends AbstractDialogFragment implements View.OnClick
     }
 
     @Override
+    protected void initDataBeforeViewCreated() {
+
+    }
+
+    @Override
     public void initView(View v) {
         v.findViewById(R.id.cancel).setOnClickListener(this);
         v.findViewById(R.id.ok).setOnClickListener(this);
