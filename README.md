@@ -1,5 +1,6 @@
 [![jitpack](https://www.jitpack.io/v/stanhe/CustomDialog.svg)](https://www.jitpack.io/#stanhe/CustomDialog)
 [![travis](https://travis-ci.org/stanhe/CustomDialog.svg?branch=master)](https://travis-ci.org/stanhe/CustomDialog/builds)
+[![Dependency Status](https://www.versioneye.com/user/projects/5a604f370fb24f0045910861/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a604f370fb24f0045910861)
 [![license](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)](https://github.com/stanhe/CustomDialog/blob/master/LICENSE)
 [![API](https://img.shields.io/badge/API-11%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=11)
 # CustomDialog
